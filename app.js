@@ -6,59 +6,59 @@
 // Quiz Data Structure
 const quizData = [
     {
-        category: "Definition & Schweregrade",
-        question: "Was bedeutet Schweregrad II (Grad II) bei der Stuhlinkontinenz im täglichen Pflegesystem?",
+        category: "Definition & Schweregrade (Folie 3 & 7)",
+        question: "Was bedeutet Schweregrad II (Grad II) bei der Stuhlinkontinenz nach dem 3-Grad-System (Folie 7)?",
         options: [
-            "Man kann Darmgase nicht mehr willentlich zurückhalten.",
-            "Man kann flüssigen Stuhl nicht mehr willentlich zurückhalten.",
-            "Das Zurückhalten von festem Stuhl ist unmöglich."
+            "Unkontrollierter Abgang von Darmgasen (Grad I).",
+            "Unfähigkeit, flüssigen Stuhl willentlich zurückzuhalten (Grad II).",
+            "Unfähigkeit, festen Stuhl willentlich zurückzuhalten (Grad III)."
         ],
         correct: 1, // Option B (Index 1)
-        explanation: "Das in der täglichen Pflege etablierte 3-Grad-System stuft die Stuhlinkontinenz wie folgt ein: Grad I beschreibt den unkontrollierten Abgang von Darmgasen. Grad II umfasst die Unfähigkeit, flüssigen oder breiigen Stuhl zurückzuhalten. Grad III beschreibt den vollständigen Kontrollverlust auch über festen Stuhl."
+        explanation: "Nach dem in der täglichen Pflege verwendeten 3-Grad-System (Folie 7) bedeutet Grad II die Unfähigkeit, flüssigen Stuhl willentlich zurückzuhalten. Grad I betrifft Darmgase, und Grad III beschreibt die Unfähigkeit, festen Stuhl zurückzuhalten. Die allgemeine Definition (Folie 3) beschreibt Stuhlinkontinenz als das Unvermögen, den Stuhl willkürlich zurückzuhalten."
     },
     {
-        category: "Ursachen der Stuhlinkontinenz",
-        question: "Welches der folgenden Beispiele ist eine muskuläre Ursache für Stuhlinkontinenz?",
+        category: "Ursachen (Folie 5 & 6)",
+        question: "Welches der folgenden Beispiele ist eine muskuläre Ursache für Stuhlinkontinenz (Folie 5)?",
         options: [
-            "Eine Schädigung des Schließmuskels, zum Beispiel durch ein Geburtstrauma.",
-            "Ein Schlaganfall oder eine Demenzerkrankung.",
-            "Eine verminderte Empfindlichkeit im Afterbereich nach einer Operation."
+            "Eine Schädigung des Schließmuskels oder Beckenbodeninsuffizienz (z. B. nach Geburtstraumen).",
+            "Ein Schlaganfall, Demenz oder Multiple Sklerose (neurogene Ursachen).",
+            "Eine verminderte oder fehlende anale Sensibilität (sensorische Ursachen)."
         ],
         correct: 0, // Option A (Index 0)
-        explanation: "Muskuläre Ursachen basieren auf direkten Schäden am Muskelapparat. Ein typisches Beispiel sind Geburtstraumen oder Operationen (z. B. Hämorrhoiden, Fisteln), bei denen der Schließmuskel verletzt wird. Schlaganfall/Demenz sind neurogene (nervliche) Ursachen; verminderte Empfindlichkeit ist eine sensorische Ursache."
+        explanation: "Wie auf Folie 5 beschrieben, gehören Schädigungen des Schließmuskels und Beckenbodeninsuffizienz (z. B. durch Geburtstraumen, Gebärmutter-OPs, Fisteln oder Bestrahlung) zu den muskulären Ursachen. Schlaganfall, Demenz und MS sind zentrale neurogene Ursachen (Folie 6), während fehlende Sensibilität sensorisch bedingt ist."
     },
     {
-        category: "Diagnostik",
-        question: "Mit welcher Untersuchungsmethode kann der Arzt die Kraft des Schließmuskels direkt messen?",
+        category: "Diagnostik (Folie 8)",
+        question: "Mit welcher Methode wird in der Diagnostik (Folie 8) die Kraft des Schließmuskels gemessen?",
         options: [
-            "Koloskopie (Darmspiegelung)",
-            "Stuhlprotokoll",
-            "Manometrie"
-        ],
-        correct: 2, // Option C (Index 2)
-        explanation: "Die Manometrie (Druckmessung) dient gezielt dazu, die Schließmuskelkraft im Enddarmbereich zu messen. Die Koloskopie beurteilt die Darmschleimhaut und schließt Tumoren aus, während das Stuhlprotokoll im Alltag die Häufigkeit und Stuhlkonsistenz dokumentiert."
-    },
-    {
-        category: "Therapie",
-        question: "Wann wird eine operative Behandlung (z. B. ein Darmschrittmacher oder eine Schließmuskelprothese) in Erwägung gezogen?",
-        options: [
-            "Direkt nach der ersten Diagnose als Standardbehandlung.",
-            "Erst wenn konservative Methoden (wie Beckenbodentraining oder Stuhlregulation) nicht ausreichen.",
-            "Nur bei immobilen Patienten zur Erleichterung der Pflege."
+            "Koloskopie (Darmspiegelung zur Schleimhautkontrolle)",
+            "Manometrie (Druckmessung des Schließmuskels)",
+            "Stuhlprotokoll (Dokumentation im Alltag)"
         ],
         correct: 1, // Option B (Index 1)
-        explanation: "Operative Eingriffe sind mit operativen Risiken verbunden. Sie werden erst dann in Erwägung gezogen, wenn alle konservativen Behandlungsmöglichkeiten (Stuhlregulation durch Ernährung, aktives Beckenbodentraining, Biofeedback oder Elektrostimulation) ausgeschöpft sind und keine Besserung brachten."
+        explanation: "Die Manometrie (Folie 8) dient speziell der Messung der Schließmuskelkraft. Die Koloskopie (Darmspiegelung) untersucht das Gewebe auf Veränderungen und Tumoren. Das Stuhlprotokoll erfasst im Pflegealltag die Konsistenz und Häufigkeit des Stuhlgangs."
     },
     {
-        category: "Hautpflege & Hilfsmittel",
-        question: "Wie sollte die Haut im Intimbereich nach einem Stuhlabgang gereinigt und gepflegt werden?",
+        category: "Therapie (Folie 9 & 10)",
+        question: "Wann werden in der Therapie operative Eingriffe wie ein Darmschrittmacher oder eine Schließmuskelprothese in Erwägung gezogen (Folie 10)?",
         options: [
-            "Kräftig abreiben und mit alkoholhaltigen Tüchern desinfizieren.",
-            "Von hinten nach vorne wischen und anschließend eine dicke Zinksalbe ohne vorherige Reinigung auftragen.",
-            "Von vorne nach hinten mit warmem Wasser reinigen, sanft trocken tupfen und Barriereprodukte anwenden."
+            "Sofort als Erstbehandlung bei der Diagnose.",
+            "Ausschließlich bei immobilen Pflegeempfängern zur Erleichterung der Pflege.",
+            "Erst wenn konservative Methoden (wie Beckenbodentraining oder Stuhlregulation) ausgeschöpft sind."
         ],
         correct: 2, // Option C (Index 2)
-        explanation: "Die Hautpflege bei Inkontinenz erfordert äußerste Schonung: Hautreinigung muss immer von vorne nach hinten erfolgen (Vermeidung von Keimverschleppung) mit warmem Wasser und milden Mitteln. Die Haut wird trocken getupft (nicht gerieben). Anschließend schützt ein Barriereprodukt (z. B. Zinkoxid-Salbe oder Dimeticon-Creme) vor aggressiven Enzymen im Stuhl."
+        explanation: "Gemäß Folie 10 werden operative Eingriffe (wie Darmschrittmacher/Sakralnervstimulation, Schließmuskelprothese oder Stoma) erst durchgeführt, wenn konservative Methoden (Folie 9) wie Beckenbodentraining, Biofeedback, Elektrostimulation oder Diätetik ausgeschöpft sind."
+    },
+    {
+        category: "Hautpflege & Hilfsmittel (Folie 11 & 12)",
+        question: "Welche Grundregel gilt laut Folie 11 und 12 für die Reinigung und den Hautschutz bei Stuhlinkontinenz?",
+        options: [
+            "Reinigung immer von hinten nach vorne und intensives Reiben mit Handtüchern.",
+            "Sofortiger Wechsel, Reinigung von vorne nach hinten mit warmem Wasser, sanft tupfen und Anwendung von Barriereprodukten (z. B. Zinkoxid, Dimeticon).",
+            "Verwendung von Pants bei dünnflüssigem Stuhl ohne zusätzlichen Hautschutz."
+        ],
+        correct: 1, // Option B (Index 1)
+        explanation: "Folie 11 betont: Sofortiger Wechsel, Reinigung immer von vorne nach hinten (Verhinderung von Keimverschleppung), sanft trockentupfen und obligater Hautschutz mit Barriereprodukten (Zinkoxid-Salbe oder Dimeticon-Creme) zum Schutz vor stuhleigenen Enzymen. Pants (Folie 12) sind bei dünnflüssigem Stuhl weniger geeignet."
     }
 ];
 
