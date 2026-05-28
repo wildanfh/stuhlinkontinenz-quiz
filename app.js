@@ -9,9 +9,9 @@ const quizData = [
         category: "Definition & Schweregrade",
         question: "Was bedeutet Schweregrad II (Grad II) bei der Stuhlinkontinenz nach dem 3-Grad-System?",
         options: [
-            "Unkontrollierter Abgang von Darmgasen (Grad I).",
-            "Unfähigkeit, flüssigen Stuhl willentlich zurückzuhalten (Grad II).",
-            "Unfähigkeit, festen Stuhl willentlich zurückzuhalten (Grad III)."
+            "Unkontrollierter Abgang von Darmgasen.",
+            "Unfähigkeit, flüssigen Stuhl willentlich zurückzuhalten.",
+            "Unfähigkeit, festen Stuhl willentlich zurückzuhalten."
         ],
         correct: 1, // Option B (Index 1)
         explanation: "Nach dem in der täglichen Pflege verwendeten 3-Grad-System bedeutet Grad II die Unfähigkeit, flüssigen Stuhl willentlich zurückzuhalten. Grad I betrifft Darmgase, und Grad III beschreibt die Unfähigkeit, festen Stuhl zurückzuhalten. Die allgemeine Definition beschreibt Stuhlinkontinenz als das Unvermögen, den Stuhl willkürlich zurückzuhalten."
