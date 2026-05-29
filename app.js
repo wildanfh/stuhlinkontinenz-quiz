@@ -31,9 +31,9 @@ const quizData = [
         category: "Diagnostik",
         question: "Mit welcher Methode wird in der Diagnostik die Kraft des Schließmuskels gemessen?",
         options: [
-            "Koloskopie (Darmspiegelung zur Schleimhautkontrolle)",
-            "Manometrie (Druckmessung des Schließmuskels)",
-            "Stuhlprotokoll (Dokumentation im Alltag)"
+            "Koloskopie",
+            "Manometrie",
+            "Stuhlprotokoll"
         ],
         correct: 1, // Option B (Index 1)
         explanation: "Die Manometrie dient speziell der Messung der Schließmuskelkraft. Die Koloskopie (Darmspiegelung) untersucht das Gewebe auf Veränderungen und Tumoren. Das Stuhlprotokoll erfasst im Pflegealltag die Konsistenz und Häufigkeit des Stuhlgangs."
