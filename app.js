@@ -95,8 +95,6 @@ const scoreFraction = document.getElementById('score-fraction');
 const resultBadge = document.getElementById('result-badge');
 const resultMessage = document.getElementById('result-message');
 
-const breakdownNursing = document.getElementById('breakdown-nursing');
-const breakdownSkin = document.getElementById('breakdown-skin');
 
 // Icons definition
 const SVG_ICONS = {
@@ -249,37 +247,23 @@ function showResults() {
     let ratingClass = 'poor';
     let ratingText = '';
     let ratingDesc = '';
-    let nursingInsight = '';
-    let skinInsight = '';
-
-    // Q5 index is 4. Let's see if user answered correct
-    // (Wait, we can track if they got the specific questions correct, but let's base it on overall score & smart evaluation)
-    const isQ5Correct = selectedOptionIndex === quizData[4].correct; // tracking active score index
 
     if (score === 5) {
         ratingClass = 'expert';
         ratingText = 'Herausragende Leistung!';
         ratingDesc = 'Hervorragendes Fachwissen! Sie haben alle Fragen fehlerfrei beantwortet. Ihr Verständnis für die klinischen und pflegerischen Aspekte der Stuhlinkontinenz ist ausgezeichnet.';
-        nursingInsight = '100% klinisch präzise';
-        skinInsight = 'Perfekter Hautschutz';
     } else if (score >= 4) {
         ratingClass = 'good';
         ratingText = 'Sehr gutes Ergebnis!';
         ratingDesc = 'Klasse! Sie beherrschen die pflegerischen Schwerpunkte der Kontinenzpflege und klinischen Diagnostik nahezu fehlerfrei.';
-        nursingInsight = 'Hervorragende Fachpflege';
-        skinInsight = 'Sicherer Hautschutz';
     } else if (score >= 3) {
         ratingClass = 'basic';
         ratingText = 'Gute Leistung!';
         ratingDesc = 'Sie haben mehr als die Hälfte der Fragen richtig beantwortet. Eine solide Basis für den Pflegealltag ist vorhanden.';
-        nursingInsight = 'Gutes Basiswissen';
-        skinInsight = 'Hautpflege-Grundkenntnisse';
     } else {
         ratingClass = 'poor';
         ratingText = 'Lernbedarf vorhanden';
         ratingDesc = 'Einige Antworten waren leider nicht korrekt. Wiederholen Sie die theoretischen Grundlagen zur Kontinenz und Hautpflege noch einmal.';
-        nursingInsight = 'Auffrischungsbedarf';
-        skinInsight = 'Hautschutz festigen';
     }
 
     // Apply classes
@@ -291,10 +275,6 @@ function showResults() {
     scoreFraction.textContent = `${score} von ${quizData.length} richtig`;
     resultBadge.textContent = ratingText;
     resultMessage.textContent = ratingDesc;
-
-    // Detailed insights
-    breakdownNursing.textContent = nursingInsight;
-    breakdownSkin.textContent = skinInsight;
 }
 
 // Reset and Start Over
